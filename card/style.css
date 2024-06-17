@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.border_gray {
+  border: 1px solid rgb(196, 195, 195);
+}
+.div_general {
+  width: 300;
+}
+.div1 {
+  margin: 15px 15px 0px 15px;
+  border: 1px solid rgb(124, 124, 124);
+  border-bottom: 0;
+  border-radius: 5px;
+  width: 90%;
+  height: 240px;
+  background-image: url("img-grigia.png");
+  background-size: cover;
+}
+.div1 h2 {
+  color: white;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  line-height: 9em;
+}
+.div2 {
+  margin: 0px 15px 15px 15px;
+  width: 90%;
+}
+.div2 li {
+  padding: 2.5% 5%;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.div3 {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: rgb(4, 75, 255);
+  opacity: 0.9;
+  font-size: 24px;
+}
