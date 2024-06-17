@@ -1,0 +1,60 @@
+<!--
+Replicare la struttura html della navbar presente nel file png, 
+disponibile al download, senza usare le proprietà CSS.
+
+Per replicare lo scheletro html della navbar, 
+prova ad utilizzare il tag semantico <nav>. 
+Per i link presenti nella navbar, invece, 
+prova ad utilizzare una lista non ordinata.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="default">
+        <div>
+          <ul class="ul_format">
+            <div class="li_format">
+              <li class="nav_text_format">Navbar</li>
+            </div>
+            <div class="li_format">
+              <li><a href="/Home/" class="a_format">Home</a></li>
+            </div>
+            <div class="li_format">
+              <li><a href="/Link/" class="a_format">Link</a></li>
+            </div>
+            <div class="li_format">
+              <li>
+                <select name="Dropdown" id="Dropdown" class="select_format">
+                  <option value="Dropdown">Dropdown</option>
+                </select>
+              </li>
+            </div>
+            <div class="li_format">
+              <li>
+                <button class="button_format_disabled">Disabled</button>
+              </li>
+            </div>
+            <div class="li_format">
+              <li class="align-left-child" class="radius-angler">
+                <input type="text" placeholder="Search" class="label_format" />
+                <button class="button_format_search button_hover">
+                  Search
+                </button>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
