@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas:
+    "green green green"
+    "yellow red blue"
+    "orange orange blue";
+}
+.green {
+  grid-area: green;
+}
+.yellow {
+  grid-area: yellow;
+}
+.yellow ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "uno due" "tre quattro";
+}
+.yellow ul li:nth-child(1) {
+  grid-area: uno;
+}
+.yellow ul li:nth-child(2) {
+  grid-area: due;
+}
+.yellow ul li:nth-child(3) {
+  grid-area: tre;
+}
+.yellow ul li:nth-child(4) {
+  grid-area: quattro;
+}
+.red {
+  grid-area: red;
+}
+.red ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "A B" "C D";
+}
+.red ul li:nth-child(1) {
+  grid-area: A;
+}
+.red ul li:nth-child(2) {
+  grid-area: B;
+}
+.red ul li:nth-child(3) {
+  grid-area: C;
+}
+.red ul li:nth-child(4) {
+  grid-area: D;
+}
+.orange {
+  grid-area: orange;
+}
+.blue {
+  grid-area: blue;
+}
