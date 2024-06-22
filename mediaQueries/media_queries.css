@@ -1,0 +1,100 @@
+/* 
+Cerca di replicare il layout visualizzato nelle immagini asset/cards-desktop.jpg, 
+cards-mobile.jpg (max-width: 375px), cards-tablet.jpg (max-width: 768px). 
+La pagina creata dovrebbe essere responsiva, 
+sia per la visualizzazione tablet (`(max-width: 768px)`) che per la visualizzazione mobile (`(max-width: 375px)`).
+
+**Suggestion:**
+
+[//]: # 'Use the Media Query rules to solve the exercise successfully.'
+
+Use the Media Query rules to solve the exercise successfully. 
+*/
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .cards {
+    /* margin-top: 10rem; */
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "c1 c2"
+      "c3 .";
+    justify-items: center;
+    align-content: center;
+  }
+  .card {
+    width: 80%;
+    height: 90%;
+  }
+  .card1 {
+    grid-area: c1;
+  }
+  .card2 {
+    grid-area: c2;
+  }
+  .card3 {
+    grid-area: c3;
+  }
+  .top li:nth-child(2) h5 {
+    font-weight: normal;
+    font-size: 90%;
+  }
+  .top li:nth-child(2) h6 {
+    font-weight: normal;
+    font-size: 80%;
+    color: white;
+  }
+  .icon {
+    width: 100%;
+    height: 7%;
+  }
+  .description {
+    width: 100%;
+    height: 30%;
+    padding: 0rem 1rem;
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cards {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3";
+    justify-items: center;
+    align-content: center;
+  }
+  .card {
+    width: 50%;
+    height: 95%;
+  }
+  .card1 {
+    grid-area: c1;
+  }
+  .card2 {
+    grid-area: c2;
+  }
+  .card3 {
+    grid-area: c3;
+  }
+  .top li:nth-child(2) h5 {
+    font-size: 2.5vw;
+  }
+  .top li:nth-child(2) h6 {
+    font-size: 2.3vw;
+  }
+  .icon {
+    width: 100%;
+    height: 8%;
+  }
+  .description {
+    font-size: 2.5vw;
+  }
+}
