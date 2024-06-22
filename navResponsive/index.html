@@ -1,0 +1,65 @@
+<!--
+Rendi la navbar creata nell'esercizio Nav 
+della lezione Introduzione ai layouts responsiva: 
+sotto i 768 pixel, la barra di navigazione viene 
+sostituita da un menu hamburger senza funzionalità, 
+che appare solamente. 
+Prova a creare il menu hamburger sia con regole CSS che
+utilizzando un'icona.
+
+Se non sai cosa è un hamburger menu, 
+puoi visionare qui qualche esempio:
+https://alvarotrigo.com/blog/hamburger-menu-css/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="default">
+        <ul class="ul_format">
+          <li>Navbar</li>
+          <li><a href="/Home/" class="a_format">Home</a></li>
+          <li><a href="/Link/" class="a_format">Link</a></li>
+          <li>
+            <select name="Dropdown" id="Dropdown" class="select_format">
+              <option value="Dropdown">Dropdown</option>
+              <option value="Dropdown">Dropdown</option>
+            </select>
+          </li>
+          <li>
+            <button class="button_format_disabled">Disabled</button>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </div>
+        <div class="ham_menu">
+          <div class="div_ham-title">
+            <h6>Hamburger menu with CSS</h6>
+            <div class="hamburger_css">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="div_icon-title">
+            <h6>Hamburger menu with icon</h6>
+            <div class="icon"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

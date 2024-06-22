@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style ul */
+.ul_format {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  list-style-type: none;
+}
+
+/* Style li */
+.ul_format li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 19%;
+  font-size: 1.3vw;
+}
+
+/* Style scritta Navbar */
+.ul_format li:nth-child(1) {
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.ul_format li:nth-child(3),
+.ul_format li:nth-child(4) select {
+  color: #a8a7a7;
+}
+
+/* Style hyperlink */
+.a_format {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Style select */
+.select_format {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+}
+select:hover {
+  cursor: pointer;
+}
+
+/* Style Button Disabled */
+
+.button_format_disabled {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(120, 119, 119);
+  font-size: inherit;
+}
+
+/* Style Div Search */
+.search {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+  height: 100%;
+  gap: 1rem;
+}
+.search button {
+  border: 1px solid rgb(20, 139, 100);
+  border-radius: 0.5vw;
+  height: 60%;
+  width: 29%;
+  font-size: 1vw;
+  color: rgb(20, 139, 100);
+  background-color: rgba(0, 0, 0, 0);
+}
+.search button:hover {
+  background-color: green;
+  color: white;
+}
+.search input {
+  padding: 0px 1rem;
+  border-radius: 0.5vw;
+  height: 60%;
+  width: 70%;
+}
+/* Hamburger menu */
+.ham_menu {
+  display: none;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+/* Style hamburger CSS */
+
+.div_ham-title {
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 50%;
+  height: 100%;
+}
+.hamburger_css {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 8%;
+  height: 45%;
+}
+
+/* Style hamburger Icon */
+
+.div_icon-title {
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 50%;
+  height: 100%;
+  background-color: #941919;
+}
+.icon {
+  width: 15%;
+  height: 50%;
+  background-image: url(icon-ham-menu.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
