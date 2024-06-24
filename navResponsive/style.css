@@ -5,7 +5,7 @@
 }
 .default {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 10vh;
@@ -32,14 +32,10 @@
   font-size: 1.3vw;
 }
 
-/* Style scritta Navbar */
-.ul_format li:nth-child(1) {
-  font-size: 1.8vw;
-  font-weight: bold;
-}
+/* Style scritte Navbar */
 
-.ul_format li:nth-child(3),
-.ul_format li:nth-child(4) select {
+.ul_format li:nth-child(2),
+.ul_format li:nth-child(3) select {
   color: #a8a7a7;
 }
 
@@ -55,7 +51,7 @@
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
   height: 100%;
-  font-size: inherit;
+  font-size: 0.6rem;
 }
 select:hover {
   cursor: pointer;
@@ -74,10 +70,8 @@ select:hover {
 
 /* Style Div Search */
 .search {
-  margin-right: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 18%;
   height: 100%;
   gap: 1rem;

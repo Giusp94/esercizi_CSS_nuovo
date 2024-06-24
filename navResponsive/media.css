@@ -22,11 +22,11 @@ https://alvarotrigo.com/blog/hamburger-menu-css/
   }
   .default {
     justify-content: center;
-    align-items: center;
   }
 
   /* Set hamburger menu */
   .ham_menu {
+    width: 80%;
     display: flex;
   }
   /* Set hamburger menu CSS */
@@ -44,12 +44,23 @@ https://alvarotrigo.com/blog/hamburger-menu-css/
     height: 10%;
     background-color: #adadad;
   }
-
+  .text_nav {
+    margin: 0 auto;
+    margin-left: 0.5rem;
+    padding: auto 0;
+    width: 15%;
+    height: 50%;
+    text-align: center;
+    border-right: 1px solid #adadad;
+  }
   /* Set hamburger menu Icon */
   .div_icon-title {
     display: flex;
   }
   .icon:hover {
     cursor: pointer;
+  }
+  .ul_format li:first-child {
+    display: block;
   }
 }
