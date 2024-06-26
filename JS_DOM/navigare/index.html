@@ -1,0 +1,62 @@
+<!-- 
+Stampa in ordine in console:
+
+l'elemento padre di ul.
+il secondo elemento figlio di ul.
+l'elemento fratello successivo del secondo li.
+l'elemento fratello precedente del secondo li.
+Il tutto utilizzando tutte e 4 le proprietà viste nel video.
+
+Puoi aggiungere innerText come ultima proprietà per poter 
+visualizzare in console il testo contenuto nei tag li. 
+Per consegnare l'esercizio al tutor, fai il push su GitHub e poi invia il link al repo. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <script>
+      // ...
+      //  stampa elemento padre di ul
+      setTimeout(() => {
+        const html = document.documentElement;
+        const body = html.children[1];
+        const ul = body.children[0];
+        console.log(ul.parentElement);
+
+        // Figlio centrale di ul
+
+        setTimeout(() => {
+          const liSecond = ul.children[1];
+          console.log(liSecond);
+          console.log(liSecond.innerText);
+
+          // Fratello successivo
+
+          setTimeout(() => {
+            const liThird = liSecond.nextElementSibling;
+            console.log(liThird);
+            console.log(liThird.innerText);
+            // Fratello precedente
+
+            setTimeout(() => {
+              const liFirst = liSecond.previousElementSibling;
+              console.log(liFirst);
+              console.log(liFirst.innerText);
+            }, 2500);
+          }, 2000);
+        }, 1500);
+      }, 1000);
+    </script>
+  </body>
+</html>
